@@ -45,7 +45,7 @@ export default function LandingPage() {
         {/* CTA */}
         <div className="flex justify-center gap-4">
           <Link
-            href="https://github.com/new?template_name=sbg-nextjs-template-alpha&template_owner=muhamadirfansobis"
+            href="https://github.com/new?template_name=mngroup-nextjs-supabase-starter&template_owner=Muhamadirfanm134"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,7 +56,7 @@ export default function LandingPage() {
           </Link>
 
           <Link
-            href="https://github.com/muhamadirfansobis/sbg-nextjs-template-alpha"
+            href="https://github.com/Muhamadirfanm134/mngroup-nextjs-supabase-starter"
             target="_blank"
             rel="noopener noreferrer"
           >
