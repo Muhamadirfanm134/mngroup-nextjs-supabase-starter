@@ -1,69 +1,88 @@
-# 🚀 Next.js Supabase Starter
+# 🚀 MNGroup Next.js Supabase Starter
 
 <p align="center">
-  <img src="./public/mn-group.png" alt="Logo" width="180" />
+  <img src="./public/mn-group.png" alt="MNGroup Logo" width="160" />
 </p>
 
 <p align="center">
-  <b>Production-ready Next.js starter template</b><br/>
-  Built for scalability, performance, and modern SaaS architecture.
+  <strong>Production-grade Next.js starter with Supabase Auth, Feature Architecture & Modern DX.</strong>
+</p>
+
+<p align="center">
+  <a href="https://mngroup-nextjs-supabase-starter.vercel.app">
+    <img src="https://img.shields.io/badge/Live-Demo-000?style=for-the-badge&logo=vercel" />
+  </a>
+  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript" />
+  <img src="https://img.shields.io/badge/Supabase-Auth-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/pnpm-Fast-F69220?style=for-the-badge&logo=pnpm&logoColor=white" />
 </p>
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" />
-  <img src="https://img.shields.io/badge/Supabase-Auth-3ECF8E?logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=white" />
-  <img src="https://img.shields.io/badge/license-MIT-blue" />
-</p>
+## 🌐 Live Demo
+
+👉 **[https://mngroup-nextjs-supabase-starter.vercel.app](https://mngroup-nextjs-supabase-starter.vercel.app)**
+
+Experience:
+
+* 🔐 Auth flow (Login / Logout)
+* 🛡 Protected routes
+* ⚡ SSR-ready Supabase integration
+* 🧱 Feature-based architecture
 
 ---
 
-## ✨ Features
+# ✨ Overview
 
-* ⚡ Next.js App Router (Latest)
-* 🔐 Supabase Authentication
-* 🧱 Feature-Based Architecture
-* 🎨 TailwindCSS + shadcn/ui
-* 📦 TanStack Query
-* 🧹 Prettier + ESLint + Husky
-* 🧠 Clean & scalable folder structure
-* 🚀 Production-ready setup
+MNGroup Starter is a **modern, scalable, production-ready foundation** for building SaaS, internal tools, or enterprise-grade web apps.
+
+Built with:
+
+* ⚡ **Next.js App Router**
+* 🔐 **Supabase Auth (SSR-safe)**
+* 🎨 **Tailwind CSS + shadcn/ui**
+* 🔄 **TanStack Query**
+* 📦 **Feature-based architecture**
+* 🛠 **Husky + lint-staged**
+* 🔷 **Strict TypeScript**
+* 🚀 **pnpm**
 
 ---
 
-## 📂 Project Structure
+# 🧠 Architecture Philosophy
 
 ```
 src/
-├─ app/
-│  ├─ (auth)
-│  ├─ (protected)
-│  └─ layout.tsx
-├─ features/
-│  ├─ auth
-│  └─ user
-├─ lib/
-├─ components/
-└─ middleware.ts
+ ├── app/              → Routes (App Router)
+ ├── features/         → Domain modules (auth, dashboard, etc.)
+ ├── components/       → Shared UI components
+ ├── lib/              → Supabase, utils, configs
+ ├── providers/        → Query & global providers
+ └── styles/
+```
+
+✔ Clean separation
+✔ Scalable for large apps
+✔ Easy to onboard new devs
+
+---
+
+# 🚀 Getting Started
+
+## 1️⃣ Use Template
+
+Click **Use this template**
+or clone:
+
+```bash
+git clone https://github.com/Muhamadirfanm134/mngroup-nextjs-supabase-starter.git
+cd mngroup-nextjs-supabase-starter
 ```
 
 ---
 
-## 🏁 Getting Started
-
-### 1️⃣ Use This Template
-
-Click **"Use this template"** on GitHub
-or create directly:
-
-[https://github.com/new?template_name=mngroup-nextjs-supabase-starter&template_owner=Muhamadirfanm134](https://github.com/new?template_name=mngroup-nextjs-supabase-starter&template_owner=Muhamadirfanm134)
-
----
-
-### 2️⃣ Install Dependencies
+## 2️⃣ Install Dependencies
 
 ```bash
 pnpm install
@@ -71,79 +90,94 @@ pnpm install
 
 ---
 
-### 3️⃣ Setup Environment Variables
+## 3️⃣ Setup Environment
 
 Create `.env.local`:
 
-```
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
 ```
 
-Get these from:
+Find keys at:
 
-[https://supabase.com/dashboard/project/_/settings/api](https://supabase.com/dashboard/project/_/settings/api)
+```
+Supabase Dashboard → Settings → API
+```
 
 ---
 
-### 4️⃣ Run Development Server
+## 4️⃣ Run Dev Server
 
 ```bash
 pnpm dev
 ```
 
-Open:
+Visit:
 
-[http://localhost:3000](http://localhost:3000)
-
----
-
-## 🔐 Authentication
-
-* Email & Password Auth
-* Middleware protected routes
-* Reactive `useAuth()` hook
-* SSR-ready Supabase setup
+```
+http://localhost:3000
+```
 
 ---
 
-## 🛠 Tech Stack
+# 🔐 Supabase Auth (SSR Ready)
 
-| Layer       | Tech                |
-| ----------- | ------------------- |
-| Framework   | Next.js 15          |
-| Styling     | Tailwind CSS        |
-| UI System   | shadcn/ui           |
-| Auth        | Supabase            |
-| State       | TanStack Query      |
-| Tooling     | Husky + lint-staged |
-| Package Mgr | pnpm                |
+* Secure session handling
+* Middleware-based protection
+* Server + Client compatible
+* Production deployment safe
 
 ---
 
-## 🧠 Why This Template?
+# 🛠 DX & Tooling
 
-Most starters are either:
-
-* ❌ Too minimal
-* ❌ Too opinionated
-* ❌ Outdated patterns
-
-This one is:
-
-* ✅ Modern
-* ✅ Scalable
-* ✅ Clean
-* ✅ SaaS-ready
+* ESLint (Next.js strict config)
+* Prettier + Tailwind plugin
+* lint-staged
+* Husky pre-commit hooks
+* Absolute imports
+* Fully typed environment
 
 ---
 
-## 📜 License
+# 📦 Why This Starter?
 
-MIT License © 2026
+Compared to boilerplates, this template is:
+
+| Feature                  | MNGroup Starter |
+| ------------------------ | --------------- |
+| App Router Ready         | ✅               |
+| Supabase SSR Auth        | ✅               |
+| Feature Architecture     | ✅               |
+| Production Config        | ✅               |
+| Clean DX                 | ✅               |
+| Opinionated but Flexible | ✅               |
 
 ---
 
-# 💙 Built for Modern Web Apps
+# 🏗 Ideal For
 
-If this template helps you, give it a ⭐ on GitHub!
+* SaaS MVP
+* Internal dashboards
+* Startup projects
+* Enterprise frontends
+* Personal production-grade apps
+
+---
+
+# 📜 License
+
+MIT License © 2026 MNGroup
+
+---
+
+# ⭐ Support
+
+If you find this starter useful:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 🚀 Use it in production
+
+---
